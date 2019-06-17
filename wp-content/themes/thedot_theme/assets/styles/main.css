@@ -1,1 +1,44 @@
 /* global css */
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+/* Global list and link */
+li {
+    list-style: none;
+}
+li>a {
+    text-decoration: none;
+}
+
+/* Header */
+#header {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#header h1 {
+    font-size: 3em;
+}
+
+.menu-headermenu-container {
+    width: 40%;
+}
+
+.menu_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menu_header a {
+    color: #7F7777;
+    font-size: 1em;
+}
