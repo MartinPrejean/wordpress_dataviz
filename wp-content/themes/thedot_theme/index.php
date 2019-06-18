@@ -8,6 +8,7 @@
         while (have_posts()){
             the_post();
     ?>
+    <a href="<?php the_permalink(); ?>">Lien vers l'article</a>
             <h1><?php the_title(); ?></h1>
             <h2>Posté le <?php the_time('F jS, Y') ?></h2>
             <p><?php the_content(); ?></p>

@@ -1,7 +1,7 @@
 /* global css */
 html {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* Global list and link */
@@ -41,4 +41,211 @@ li>a {
 .menu_header a {
     color: #7F7777;
     font-size: 1em;
+}
+
+
+/*
+*
+*       ARTICLE PAGE
+*
+*/
+
+
+.post
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.post h1
+{
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.article-main p
+{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+
+.post h2
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.content
+{
+    width: 600px;
+}
+
+.video-post
+{
+    margin: 0;
+    width: 100vw;
+    height: 50vh;
+    background: #000;
+}
+
+.carousel-data
+{
+    position: relative;
+    margin: 0;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-data
+{
+    position: absolute;
+    /* width: 50vw;
+    height: 50vh;  */
+    margin: 0 25px 0 25px;
+}
+
+/**
+ * Slides
+ */
+.carousel-data .slides,
+.carousel-data .slide,
+.carousel-data .img-data
+{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-data .slide,
+.carousel-data .img-data
+{
+    transition: transform 0.6s cubic-bezier(0.75, 0, 0.25, 1);
+    will-change: transform;
+}
+
+.carousel-data .slide.is-before
+{
+    transform: translateX(-75vw);
+}
+
+.carousel-data .slide.is-before .img-data
+{
+    transform: translateX(25vw);
+}
+
+.carousel-data .slide.is-after
+{
+    transform: translateX(75vw);
+}
+
+.carousel-data .slide.is-after .img-data
+{
+    transform: translateX(-25vw);
+}
+
+/**
+ * Siblings
+ */
+.carousel-data .sibling
+{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+    will-change: opacity;
+}
+
+.carousel-data .sibling.previous
+{
+    left: 0;
+}
+
+.carousel-data .sibling.next
+{
+    right: 0;
+}
+
+.carousel-data .sibling::after
+{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #0E0E0E;
+    border-right: 2px solid #0E0E0E;
+}
+
+.carousel-data .sibling.previous::after
+{
+    transform: translateX(6px) rotate(-135deg)
+}
+
+.carousel-data .sibling.next::after
+{
+    transform: translateX(-6px) rotate(45deg)
+}
+
+/**
+ * Pagination
+ */
+.carousel-data .pagination
+{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.carousel-data .pagination .page
+{
+    display: flex;
+    width: 24px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.carousel-data .pagination .page::after
+{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #0E0E0E;
+}
+
+.carousel-data .pagination .page.is-active::after,
+.carousel-data .pagination .page:hover::after
+{
+    background: #0E0E0E;
 }
