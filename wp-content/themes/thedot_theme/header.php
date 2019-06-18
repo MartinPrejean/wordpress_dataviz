@@ -5,7 +5,7 @@
 
         <!-- Appel du fichier style.css de notre thème -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900|Source+Serif+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900|Source+Serif+Pro&display=swap" rel="stylesheet">
         <!-- Execution de la fonction wp_head() obligatoire ! -->
         <?php wp_head(); ?>
     </head>
