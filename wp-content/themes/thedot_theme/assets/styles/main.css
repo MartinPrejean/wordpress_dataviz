@@ -474,7 +474,7 @@ main.homepage-main
 
     #header nav 
     {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
@@ -522,6 +522,7 @@ main.homepage-main
     .latest-article
     {
         flex-direction: column;
+        height: 40vh;
     }
 
     .menu_header a 
@@ -534,5 +535,21 @@ main.homepage-main
     {
         height: 100px;
         width: 100px;
+    }
+
+    .latest-article .thumbnail
+    {
+        width: 100%;
+    }
+
+    .latest-article .thumbnail img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .latest-article .latest-article-content
+    {
+        width: 100%;
     }
 }
