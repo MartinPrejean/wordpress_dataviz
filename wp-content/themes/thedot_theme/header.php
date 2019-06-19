@@ -11,7 +11,8 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <header id="header">          	
+        <header id="header">
+            <div class="toggle-button"></div>
             <a href="<?php bloginfo('url'); ?>"><?= file_get_contents(IMAGES_URL . "/global_logo.svg"); ?></a>
             <nav>
                 <div class="logos">

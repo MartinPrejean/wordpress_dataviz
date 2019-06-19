@@ -1,5 +1,17 @@
 // Global js
-console.log('hello')
+
+// Toggle button
+$toggleButton = document.querySelector('.toggle-button')
+$menu = document.querySelector('#header nav')
+
+$toggleButton.addEventListener(
+    'click',
+    () => {
+        $menu.classList.toggle('toggle')
+        $toggleButton.classList.toggle('toggle')
+    }
+)
+
 
 const $carousels = document.querySelectorAll('.js-carousel')
 
