@@ -11,8 +11,8 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <header id="header">
-            <?= file_get_contents(IMAGES_URL . "/global_logo.svg"); ?>
+        <header id="header">          	
+            <a href="<?php bloginfo('url'); ?>"><?= file_get_contents(IMAGES_URL . "/global_logo.svg"); ?></a>
             <nav>
                 <div class="logos">
                     <a class="logo_facebook" href="https://facebook"><?= file_get_contents(IMAGES_URL . "/logos/facebook.svg"); ?></a>

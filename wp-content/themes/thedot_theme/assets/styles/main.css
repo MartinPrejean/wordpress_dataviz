@@ -261,6 +261,7 @@ main.homepage-main
 {
     font-size: var(--title-size);
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .articles-container .article .texts
