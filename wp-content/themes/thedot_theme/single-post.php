@@ -3,6 +3,21 @@
 	<section id="primary" class="content-area">
 		<main id="article-main" class="article-main">
 
+			<?php
+			while ( have_posts() ) :
+				the_post();
+
+				get_template_part( 'template-parts/page/content', 'page' );
+
+				// If comments are open or we have at least one comment, load up the comment template.
+				// if ( comments_open() || get_comments_number() ) :
+				// 	comments_template();
+				// endif;
+
+			endwhile; // End of the loop.
+			?>
+			
+			<!-- Introduction de l'article-->
 			<div class="post">
 				<h1>Titre de l'article</h1>
 				<p class="content">
@@ -10,8 +25,10 @@
 				</p>
 			</div>
 
+			<!-- Vidéo de l'article-->
 			<div class="video-post"> </div>
 
+			<!-- Contenu de l'article-->
 			<div class="post">
 				<p class="content">
 					Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
@@ -19,7 +36,8 @@
 				<h2>Consommation par régions</h2>
 			</div>
 
-			<div id="intro" class="slider glide glide--ltr glide--carousel glide--swipeable">
+			<!-- Carousel pour la dataviz-->
+			<div id="intro" class="slider glide glide--ltr glide--carousel glide--swipeable"> 
 
 				<div data-glide-el="controls">
 					<button class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev" data-glide-dir="<">
@@ -55,6 +73,7 @@
 					<button class="slider__bullet glide__bullet" data-glide-dir="=5"></button>			
 					<button class="slider__bullet glide__bullet" data-glide-dir="=6"></button>
 				</div>
+
 			</div>
 
 
