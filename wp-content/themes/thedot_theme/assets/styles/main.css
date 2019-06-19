@@ -201,12 +201,12 @@ nav .logos
     width: 15%;
 }
 
-#footer nav .logos .logo_facebook svg g, #footer nav .logos .logo_twitter svg g
+#footer nav .logos .logo_facebook svg g, #footer nav .logos .logo_twitter svg g, #header nav.toggle .logos .logo_facebook svg g, #header nav.toggle .logos .logo_twitter svg g
 {
     fill: white;
 }
 
-#footer nav .logos .logo_search svg g 
+#footer nav .logos .logo_search svg g, #header nav.toggle .logos .logo_search svg g
 {
     stroke: white;
 }
@@ -416,10 +416,10 @@ main.homepage-main
 {
     display: none;
     position: fixed;
-    right: 10px;
-    top: 50px;
-    height: 3px;
-    width: 50px;
+    right: 50px;
+    top: 100px;
+    height: 5px;
+    width: 80px;
     background: var(--black);
     z-index: 20;
 }
@@ -468,6 +468,10 @@ main.homepage-main
 /* Responsive */
 @media screen and (max-width: 1024px) 
 {
+    html {
+        font-size: 18px;
+    }
+
     #header nav 
     {
         position: absolute;
@@ -490,6 +494,12 @@ main.homepage-main
         transform: translateY(0);
     }
 
+    #header nav.toggle .logos 
+    {
+        height: 100px;
+        width: 50%;
+    }
+
     .menu-headermenu-container
     {
         width: 50%;
@@ -497,8 +507,11 @@ main.homepage-main
 
     .menu_header
     {
+        margin-top: 48px;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        height: 18vh;
     }
 
     .toggle-button
@@ -509,5 +522,17 @@ main.homepage-main
     .latest-article
     {
         flex-direction: column;
+    }
+
+    .menu_header a 
+    {
+        color: white;
+        font-size: 3rem;
+    }
+
+    #header nav.toggle .logos svg
+    {
+        height: 100px;
+        width: 100px;
     }
 }
