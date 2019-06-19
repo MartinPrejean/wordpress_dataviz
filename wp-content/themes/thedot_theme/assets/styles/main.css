@@ -236,6 +236,25 @@ main.homepage-main
     display: flex;
     flex-direction: column;
     width: 30%;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.articles-container .article .thumbnail
+{
+    margin-top: 24px;
+    height: 230px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.articles-container .article .thumbnail img
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
 }
 
 .articles-container .article .article-title
@@ -283,6 +302,7 @@ main.homepage-main
     text-decoration: none;
     outline: none;
 }
+
 .newsletter form button
 {
     width: 30%;
