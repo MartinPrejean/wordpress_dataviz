@@ -1,0 +1,118 @@
+{
+    "france":[
+        {
+            "pourcentage": 39,
+            "reset": "Toutes-les-energies",
+            "type": "NonRenouvelables",
+            "detail": "Petrole",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 1,
+            "reset": "Toutes-les-energies",
+            "type": "NonRenouvelables",
+            "detail": "Charbon",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 21,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "GazNaturel",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 24,
+            "reset": "Toutes-les-energies",
+            "type": "NonRenouvelables",
+            "detail": "Nucleaire",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 1,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "Solaire",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 1,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "Eolienne",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 4,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "Hydraulique",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 10,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "Thermiques/Déchets",
+            "ratingClassValue": 1
+        }
+    ],
+    "monde":[
+        {
+            "pourcentage": 42,
+            "reset": "Toutes-les-energies",
+            "type": "NonRenouvelables",
+            "detail": "Petrole",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 19,
+            "reset": "Toutes-les-energies",
+            "type": "NonRenouvelables",
+            "detail": "Charbon",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 21,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "GazNaturel",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 2,
+            "reset": "Toutes-les-energies",
+            "type": "NonRenouvelables",
+            "detail": "Nucleaire",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 0,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "Solaire",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 1,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "Eolienne",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 3,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "Hydraulique",
+            "ratingClassValue": 1
+        },
+        {
+            "pourcentage": 12,
+            "reset": "Toutes-les-energies",
+            "type": "Renouvelables",
+            "detail": "Thermiques/Déchets",
+            "ratingClassValue": 1
+        }
+    ]
+}

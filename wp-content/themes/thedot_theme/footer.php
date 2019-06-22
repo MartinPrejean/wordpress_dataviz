@@ -17,7 +17,15 @@
                 ?>
             </nav>
         </footer>
-
+        <script>
+            <?php $datasUrl = JS_URL . '/scripts'; ?>
+            let CSVF2015 = `<?= plugin_dir_path($datasUrl); ?>/bubbleChartFrance2015.csv`
+            let CSVF2010 = `<?= plugin_dir_path($datasUrl); ?>/bubbleChartFrance2010.csv`
+            let CSVF2005 = `<?= plugin_dir_path($datasUrl); ?>/bubbleChartFrance2005.csv`
+            let CSVW2015 = `<?= plugin_dir_path($datasUrl); ?>/bubbleChartWorld2015.csv`
+            let CSVW2010 = `<?= plugin_dir_path($datasUrl); ?>/bubbleChartWorld2010.csv`
+            let CSVW2005 = `<?= plugin_dir_path($datasUrl); ?>/bubbleChartWorld2005.csv`
+        </script>
         <!-- Execution de la fonction wp_footer() obligatoire ! -->
         <?php wp_footer();  ?>
     </body>

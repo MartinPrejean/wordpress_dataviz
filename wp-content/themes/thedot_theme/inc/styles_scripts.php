@@ -14,6 +14,18 @@ function ajout_scripts() {
     // appel du script dans la page
     wp_enqueue_script('main_script');
 
+    // enregistrement d'un nouveau script
+    wp_register_script('bubbles_script', get_template_directory_uri() . '/assets/scripts/bubbles.js', array('jquery'),'1.1', true);
+
+    // appel du script dans la page
+    wp_enqueue_script('bubbles_script');
+
+    // enregistrement d'un nouveau script
+    wp_register_script('bubblesWorld_script', get_template_directory_uri() . '/assets/scripts/bubblesWorld.js', array('jquery'),'1.1', true);
+
+    // appel du script dans la page
+    wp_enqueue_script('bubblesWorld_script');
+
     // enregistrement d'un nouveau style
     wp_register_style( 'main_style', get_template_directory_uri() . '/assets/styles/main.css' );
 
@@ -25,5 +37,11 @@ function ajout_scripts() {
 
     // appel du style dans la page
     wp_enqueue_style( 'glide_style' );
+
+    // enregistrement d'un nouveau style
+    wp_register_style( 'dataviz_style', get_template_directory_uri() . '/assets/styles/dataviz.css' );
+
+    // appel du style dans la page
+    wp_enqueue_style( 'dataviz_style' );
 
 }
