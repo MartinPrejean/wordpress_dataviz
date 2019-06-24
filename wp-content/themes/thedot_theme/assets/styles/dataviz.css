@@ -8,6 +8,7 @@
 {
     text-align:center;
     width: 100%;
+    margin-top: 32px;
 }
 
 .charts 
@@ -51,16 +52,64 @@ border: solid 2px black;
 }
   
   
-.label {
+.label 
+{
     fill: black;
-            font-size: 16px;
-        }
+    font-size: 16px;
+    font-weight: bold;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+label input
+{
+    display: none;
+}
+
+#overallRatings
+{
+    margin-bottom: 25px;
+}
+
+#overallRatings label
+{
+    border: solid 1px #333333;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#overallRatings label.active
+{
+    background: #333333;
+    color: white;
+}
+
+#RiskCycle
+{
+    margin-bottom: 25px;
+}
+
+#RiskCycle label
+{
+    border: solid 1px #0E99EF;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#RiskCycle label.active
+{
+    background: #0E99EF;
+}
         
-.worldLabel {
+.worldLabel 
+{
     fill: black;
-            font-size: 16px;
-            font-weight: bold;
-  }
+    font-size: 16px;
+    font-weight: bold;
+}
   
 .ratingCategory1{
 fill:#88DB54;
