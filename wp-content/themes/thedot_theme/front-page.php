@@ -11,7 +11,7 @@
                     <div class="thumbnail"><?php the_post_thumbnail('single_thumbnail'); ?></div>
                     <div class="latest-article-content">
                         <h2 class="article-title"><?php the_title(); ?></h2>
-                        <div class="texts"><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 100, '...');?></div>
+                        <div class="texts"><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 100);?></div>
                         <div class="article-bottom">
                             <span>By <?php the_author() ?></span>
                             <span><?php the_time('F jS, Y') ?></span>
@@ -37,7 +37,7 @@
                 <a href="<?= get_permalink(); ?>" class="article">
                     <div class="thumbnail"><?php the_post_thumbnail('single_thumbnail'); ?></div>
                     <h2 class="article-title"><?php the_title(); ?></h2>
-                    <div class="texts"><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 100, '...');?></div>
+                    <div class="texts"><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 100);?></div>
                     <div class="article-bottom">
                         <span>By <?php the_author() ?></span>
                         <span><?php the_time('F jS, Y') ?></span>
@@ -70,7 +70,7 @@
                 <a href="#" class="article">
                     <div class="thumbnail"><?php the_post_thumbnail('single_thumbnail'); ?></div>
                     <h2 class="article-title"><?php the_title(); ?></h2>
-                    <div class="texts"><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 100, '...');?></div>
+                    <div class="texts"><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 100);?></div>
                     <div class="article-bottom">
                         <span>By <?php the_author() ?></span>
                         <span><?php the_time('F jS, Y') ?></span>
