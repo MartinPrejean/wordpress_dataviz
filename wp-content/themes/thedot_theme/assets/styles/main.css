@@ -163,7 +163,7 @@ iframe
 
 /*
 *
-*
+* Footer
 *
 */
 
@@ -175,9 +175,14 @@ iframe
 
 footer 
 {
-    background: var(--main-blue);
+    background: var(--black);
     padding: 0 10px;
     margin-top: 60px;
+}
+
+footer .logo-footer svg text
+{
+    fill: white;
 }
 
 /* nav */
@@ -563,4 +568,78 @@ main.homepage-main
     {
         width: 100%;
     }
+}
+
+/* 
+* About page
+*/
+
+.about-main
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about-main h1, .about-main h2
+{
+    font-size: var(--big-title-size);
+    font-weight: bold;
+}
+
+.about-main p
+{
+    margin-top: 32px;
+    line-height: 30px;
+}
+
+.bar-after
+{
+    position: relative;
+}
+
+.bar-after::after
+{
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background: var(--main-blue);
+}
+
+.about-main .team
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.about-main .people
+{
+    width: 30%;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.about-main .people p
+{
+    font-size: var(--text-size);
+    font-weight: 700;
+}
+
+.about-main .people-img
+{
+    width: 100%;
+    height: auto;
+}
+
+.about-main .people-img img
+{
+    width: 100%;
+    height: auto;
 }
