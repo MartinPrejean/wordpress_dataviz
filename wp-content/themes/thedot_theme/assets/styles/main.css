@@ -334,18 +334,20 @@ main.homepage-main
 .articles-container .article .thumbnail
 {
     margin-top: 24px;
-    height: 230px;
+    height: 200px;
     width: 100%;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .articles-container .article .thumbnail img
 {
     position: absolute;
     top: 0;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 .articles-container .article .article-title
