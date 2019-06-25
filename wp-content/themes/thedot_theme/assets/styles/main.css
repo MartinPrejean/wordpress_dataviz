@@ -607,9 +607,48 @@ main.homepage-main , main.archives-main
         width: 100%;
     }
 
-    h2
+    .articles-container
     {
-        font-size: 1.5rem;
+        flex-direction: column
+    }
+
+    .articles-container .article
+    {
+        flex-direction: row;
+        width: 85vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .articles-container .article .thumbnail
+    {
+        width: 40vw;
+        height: auto;
+    }
+
+    .articles-container .article .article-description
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 20px;
+    }
+
+    .articles-container .article .article-description .article-title
+    {
+        width: 60vw;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .articles-container .article .article-description .texts
+    {
+        width: auto;
+        font-size: 0.9rem;
+    }
+
+    .article-bottom
+    {
+        
     }
 
     /*
