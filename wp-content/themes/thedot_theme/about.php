@@ -3,7 +3,13 @@
 <?php get_header(); //appel du template header.php  ?>
     <main id="about-main" class="about-main">
         <h1 class="bar-after">Pourquoi The Dot ?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eum consequuntur? Id nostrum in vel voluptatum, tenetur aut aliquid nobis. Laboriosam vitae atque exercitationem alias cumque nisi, rem dolor nostrum!</p>
+        <p>
+            Nous sommes une équipe d’étudiants qui souhaitent, par la vulgarisation, changer le modèle énergétique présent et éveiller la population sur l’impasse énergétique actuelle. 
+            Pourquoi ? Car cet enjeu nous concerne tous, de par son impact environnemental, économique et sociétal.
+            Comment ? En “choquant” le lecteur avec des données qui le feront réfléchir.
+            <br>
+            Nous vous souhaitons également une bonne lecture !
+        </p>
         <h2 class="bar-after">L'équipe</h2>
         <div class="team">
             <div class="people">

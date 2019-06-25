@@ -1,6 +1,6 @@
 <?php get_header(); //appel du template header.php  ?>
     <main id="homepage-main" class="homepage-main">
-        <p class="homepage-description">Nous sommes un média neutre sur l’impact économique et politique de la consommation d’énergie.</p>
+        <p class="homepage-description"> Pensons ensemble au modèle énergétique de demain.</p>
         <div class="latest-post">
             <?php
                 // boucle WordPress
