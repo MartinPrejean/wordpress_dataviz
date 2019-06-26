@@ -289,11 +289,11 @@ main.homepage-main , main.archives-main
 .latest-article
 {
     width: 100%;
-    height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 24px;
     text-decoration: none;
     color: var(--black);
 }
@@ -309,6 +309,7 @@ main.homepage-main , main.archives-main
     width: 80%;
     height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -765,6 +766,11 @@ main.homepage-main , main.archives-main
     iframe
     {
         height: 30vh;
+    }
+
+    .canvas-container
+    {
+        height: auto;
     }
 
     /*

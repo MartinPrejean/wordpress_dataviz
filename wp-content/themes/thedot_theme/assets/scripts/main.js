@@ -56,7 +56,7 @@ let myLineChart = new Chart(ctx, {
     options: {
         title: {
             display: true,
-            text: 'Consommation d\'énergie en kWh/an'
+            text: 'Consommation d\'énergie par personne en kWh/an'
         },
         responsive: true,
         maintainAspectRatio: true
