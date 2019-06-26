@@ -179,6 +179,15 @@ iframe
 }
 
 
+.glide__slide 
+{
+    display: flex;
+    justify-content: center;
+    align-items: items;
+}
+
+
+
 
 /*
 *   Footer
@@ -772,7 +781,6 @@ main.homepage-main , main.archives-main
     {
         height: auto;
     }
-
     /*
     ** ABOUT
     */

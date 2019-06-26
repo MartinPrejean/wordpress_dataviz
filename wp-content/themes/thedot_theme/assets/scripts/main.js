@@ -111,21 +111,14 @@ $toggleButton.addEventListener(
     }
 )
 
-
-const $carousels = document.querySelectorAll('.js-carousel')
-
-for(const $carousel of $carousels)
-{
-    const carousel = new Carousel($carousel)
-}
-
 var glide = new Glide('#intro', {
+    slidesToShow: 1,
     type: 'carousel',
-    perView: 4,
+    perView: 1,
     focusAt: 'center',
     breakpoints: {
       800: {
-        perView: 2
+        perView: 1
       },
       480: {
         perView: 1
