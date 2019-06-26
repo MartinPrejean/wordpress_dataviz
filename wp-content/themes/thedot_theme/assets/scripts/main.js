@@ -89,14 +89,17 @@ let myLineChart2 = new Chart(ctx2, {
         responsive: true,
         maintainAspectRatio: true
     }
+    
 });
+
+
 
 // Event handler to resize the canvas when the document view is changed
 window.addEventListener('resize', resizeCanvas, false);
 
 function resizeCanvas() {
-  canvas.width = window.innerWidth / 2;
-  canvas.height = window.innerHeight / 4;
+    canvas.style.height = '500px';
+    canvas.style.width = '500px';
 }
 
 // Toggle button

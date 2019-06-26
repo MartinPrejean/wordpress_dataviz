@@ -178,12 +178,18 @@ iframe
     right: 0;
 }
 
-
 .glide__slide 
 {
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: items;
+}
+
+.glide__slide img
+{
+    width: 70%;
+    height: 70%;
 }
 
 
@@ -779,8 +785,9 @@ main.homepage-main , main.archives-main
 
     .canvas-container
     {
-        height: auto;
+        height: 10vw;
     }
+    
     /*
     ** ABOUT
     */
