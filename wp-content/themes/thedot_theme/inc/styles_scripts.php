@@ -1,7 +1,7 @@
 <?php
 
 function ajout_scripts() {
-
+    
     // enregistrement d'un nouveau script
     wp_register_script('glide_script', get_template_directory_uri() . '/assets/scripts/glide.min.js', array('jquery'),'1.1', true);
 

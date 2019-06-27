@@ -65,8 +65,8 @@
         <div class="articles-container before">
             <?php
                 // boucle WordPress
-                if (have_posts()){
-                    while (have_posts()){
+                $posts = get_posts('numberposts=6');
+                    foreach ($posts as $post) {
                         the_post();
             ?>
                 <a href="#" class="article">
@@ -81,12 +81,6 @@
                     </div>
                 </a>
             <?php
-                }
-                }
-                else {
-                    ?>
-                        Nous n'avons pas trouvé d'article répondant à votre recherche
-                    <?php
                 }
             ?>
         </div>
