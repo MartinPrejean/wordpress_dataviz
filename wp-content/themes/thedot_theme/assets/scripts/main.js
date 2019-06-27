@@ -1,5 +1,24 @@
 // Global js
 
+// Laisser le script du carousel avant car quand il n'y a pas de graphe
+// le carousel peut se casser
+var glide = new Glide('#intro', {
+    slidesToShow: 1,
+    type: 'carousel',
+    perView: 1,
+    focusAt: 'center',
+    breakpoints: {
+      800: {
+        perView: 1
+      },
+      480: {
+        perView: 1
+      }
+    }
+  })
+  
+  glide.mount()
+
 let ctx = document.getElementById('myChart');
 let ctx2 = document.getElementById('myChart2');
 let myLineChart = new Chart(ctx, {
@@ -113,20 +132,3 @@ $toggleButton.addEventListener(
         $toggleButton.classList.toggle('toggle')
     }
 )
-
-var glide = new Glide('#intro', {
-    slidesToShow: 1,
-    type: 'carousel',
-    perView: 1,
-    focusAt: 'center',
-    breakpoints: {
-      800: {
-        perView: 1
-      },
-      480: {
-        perView: 1
-      }
-    }
-  })
-  
-  glide.mount()
