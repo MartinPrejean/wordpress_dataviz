@@ -10,8 +10,16 @@
                         the_post();
             ?>
                 <a href="<?= get_permalink(); ?>" class="article">
-                    <div class="video_intro">
+                    <div class="video-container">
                         <iframe src="https://player.vimeo.com/video/344552400?rel=0&amp;title=0&amp;byline=0&amp;portrait=0" width="100%" height="680px" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>  
+                    </div>
+                    <div class="article-description">
+                        <h2 class="article-title"><?php the_title(); ?></h2>
+                        <div class="texts"><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 100);?></div>
+                        <div class="article-bottom">
+                            <span>By <?php the_author() ?></span>
+                            <span><?php the_time('F jS, Y') ?></span>
+                        </div>
                     </div>
                 </a>
             <?php

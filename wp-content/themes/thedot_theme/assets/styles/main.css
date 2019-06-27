@@ -147,6 +147,16 @@ iframe
     height: 80vh;
 }
 
+.video-container
+{
+    width: 100%;
+}
+
+.video-container iframe
+{
+    width: 100%;
+    height: auto;
+}
 
 /**
  * Arrows
