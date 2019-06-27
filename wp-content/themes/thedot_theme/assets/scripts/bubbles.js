@@ -75,6 +75,7 @@
 
 
 // Create bubble Chart
+
 if (document.querySelector('.bubbleContainer') !== null) 
 {
   let width = document.querySelector('.bubbleContainer').offsetWidth,

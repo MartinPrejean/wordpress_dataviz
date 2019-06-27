@@ -2,6 +2,9 @@
 
 if (document.querySelector('.bubbleContainer') !== null) 
 {
+  let width = document.querySelector('.bubbleContainer').offsetWidth,
+  height = 630;
+  
   d3.select("#bubbleChart2").append("svg")
       .attr("width", width)
       .attr("height", height)

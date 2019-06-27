@@ -116,16 +116,6 @@ if(document.querySelector('#myChart') !== null)
     });
 }
 
-
-
-// Event handler to resize the canvas when the document view is changed
-window.addEventListener('resize', resizeCanvas, false);
-
-function resizeCanvas() {
-    canvas.style.height = '500px';
-    canvas.style.width = '500px';
-}
-
 // Toggle button
 $toggleButton = document.querySelector('.toggle-button')
 $menu = document.querySelector('#header nav')
