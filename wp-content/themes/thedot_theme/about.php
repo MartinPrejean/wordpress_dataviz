@@ -20,25 +20,25 @@
             </div>
             <div class="people">
                 <div class="people-img">
-                    <img src="<?= IMAGES_URL . "/moi-min.jpg"; ?>" alt="">
+                    <img src="<?= IMAGES_URL . "/Martin.jpg"; ?>" alt="">
                 </div>
                 <p>Prejean Martin</p>
             </div>
             <div class="people">
                 <div class="people-img">
-                    <img src="<?= IMAGES_URL . "/moi-min.jpg"; ?>" alt="">
+                    <img src="<?= IMAGES_URL . "/clement.jpg"; ?>" alt="">
                 </div>
                 <p>Vezier Clément</p>
             </div>
             <div class="people">
                 <div class="people-img">
-                    <img src="<?= IMAGES_URL . "/moi-min.jpg"; ?>" alt="">
+                    <img src="<?= IMAGES_URL . "/Raphael.jpg"; ?>" alt="">
                 </div>
                 <p>Peralta Raphaël</p>
             </div>
             <div class="people">
                 <div class="people-img">
-                    <img src="<?= IMAGES_URL . "/moi-min.jpg"; ?>" alt="">
+                    <img src="<?= IMAGES_URL . "/Maxence.jpg"; ?>" alt="">
                 </div>
                 <p>Guilpain Maxence</p>
             </div>

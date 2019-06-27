@@ -58,7 +58,7 @@
         <div class="newsletter before">
             <h2 class="newsletter-title">S’inscrire à la newsletter et recevoir des données exclusifs toutes les semaines.</h2>
             <form action="#" method="get">
-                <input type="text" placeholder="xxxx@xxxx.com" name="email">
+                <input type="text" placeholder="thedot@gmail.com" name="email">
                 <button type="submit">S'inscrire</button>
             </form>
         </div>

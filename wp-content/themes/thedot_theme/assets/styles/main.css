@@ -602,7 +602,8 @@ main.homepage-main , main.archives-main
 .about-main .people-img
 {
     width: 100%;
-    height: auto;
+    height: 60%;
+    overflow: hidden;
 }
 
 .about-main .people-img img
@@ -813,5 +814,10 @@ main.homepage-main , main.archives-main
         flex-direction: column;
         justify-content: center;
         align-content: center;
+    }
+
+    .newsletter form button
+    {
+        width: 35%;
     }
 }
