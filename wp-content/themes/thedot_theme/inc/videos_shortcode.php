@@ -1,16 +1,16 @@
 <?php
     // création du shortcode dans functions.php
-    add_shortcode('dataviz', 'callDataviz');
+    add_shortcode('video', 'callVideo');
 
     // création de la fonction associée au shortcode.
-    function callDataviz( $atts ) {
+    function callVideo( $atts ) {
         $atts =  shortcode_atts(
                 array(
                 'id' => 1 // id par défaut
                 ),
                 $atts
                 );
-        $html = file_get_contents(THEME_PATH.'/template-parts/page/content-dataviz'.$atts['id'].'.php');
+        $html = file_get_contents(THEME_PATH.'/template-parts/page/content-video'.$atts['id'].'.php');
         // echo $html;
         return $html;
         // return 'dataviz'.$atts['id'];
