@@ -32,7 +32,7 @@
             </div>
             <div class="people">
                 <div class="people-img">
-                    <img src="<?= IMAGES_URL . "/Raphael.jpg"; ?>" alt="">
+                    <img src="<?= IMAGES_URL . "/Raphael.JPG"; ?>" alt="">
                 </div>
                 <p>Peralta Raphaël</p>
             </div>
