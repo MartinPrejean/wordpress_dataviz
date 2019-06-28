@@ -28,7 +28,7 @@
                 <div class="people-img">
                     <img src="<?= IMAGES_URL . "/clement.jpg"; ?>" alt="">
                 </div>
-                <p>Vezier Clément</p>
+                <p>Vesier Clément</p>
             </div>
             <div class="people">
                 <div class="people-img">

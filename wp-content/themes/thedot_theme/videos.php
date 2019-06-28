@@ -6,12 +6,12 @@
             <?php
                 // boucle WordPress
                 $posts = get_posts('numberposts=-1');
-                    foreach ($posts as $post) {
+                    foreach ($posts as $key => $post) {
                         the_post();
             ?>
                 <a href="<?= get_permalink(); ?>" class="article">
                     <div class="video-container">
-                        <iframe src="https://player.vimeo.com/video/344552400?rel=0&amp;title=0&amp;byline=0&amp;portrait=0" width="100%" height="680px" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>  
+                        <?php $content = '[video id="'.$key.'"]' ; echo do_shortcode($content); ?>
                     </div>
                     <div class="article-description">
                         <h2 class="article-title"><?php the_title(); ?></h2>
